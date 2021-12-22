@@ -16,3 +16,4 @@ echo $y
 
 #Calculate % error rate to 4 sigfig
 echo "scale=2 ; $x / $y *100" | bc
+echo "done!"
