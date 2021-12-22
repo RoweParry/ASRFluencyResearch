@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-corpus= LANGSNAP
+corpus=LANGSNAP
 SOURCEDIR=/afs/inf.ed.ac.uk/user/r/rparry2/Documents/fluency-research/SLA-French/$corpus
 error= read error
 
@@ -15,4 +15,4 @@ y=$(cat $SOURCEDIR/*.txt | wc -l)
 echo $y
 
 #Calculate % error rate to 4 sigfig
-echo "scale=2 ; $x / $y *100" | bc &>> error-rate-results.txt
+echo "scale=2 ; $x / $y *100" | bc
