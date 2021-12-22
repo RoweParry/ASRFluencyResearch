@@ -7,7 +7,7 @@ SOURCEDIR=/afs/inf.ed.ac.uk/user/r/rparry2/Documents/fluency-research/SLA-French
 error= read error
 
 #Extract count of lines containing error and sum
-x=$(grep $error $SOURCEDIR/*.cha -c -h -r | awk '{ SUM += $1} END { print SUM }')
+x=$(grep $error $SOURCEDIR/*/*.cha -c -h -r | awk '{ SUM += $1} END { print SUM }')
 echo $x
 
 #Extract total number of lines
